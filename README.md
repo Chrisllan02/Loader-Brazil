@@ -1,54 +1,65 @@
-# Loader-Brazil
-Loader Bandeira do Brasil 🇧🇷 (Animação CSS 3D)
+Loader Bandeira do Brasil 🇧🇷 (CSS 3D & Typewriter)
 
-Este projeto apresenta um loader (tela de carregamento) 3D realista com as cores e formas da bandeira do Brasil. A animação é feita puramente com HTML5 e CSS3, utilizando transformações 3D e sombras para criar profundidade, sem necessidade de JavaScript pesado ou bibliotecas externas.
+Um loader (tela de carregamento) moderno, realista e patriótico, desenvolvido puramente com HTML5 e CSS3. O projeto apresenta uma animação de "construção" da bandeira brasileira em 3D, transições suaves e suporte automático a temas claros e escuros.
 
-🚀 Demonstração (Preview)
+✨ Funcionalidades
 
-Como o GitHub não roda animações direto neste arquivo de texto, você deve acessar o link oficial do projeto abaixo:
+Animação Complexa: Ciclo contínuo de "Onda" → "Fusão" → "Explosão" (formação da bandeira) → "Desconstrução".
 
-👉 CLIQUE AQUI PARA VER A ANIMAÇÃO RODANDO
+Efeito 3D Realista: Uso avançado de gradientes, box-shadow e perspective para criar volumetria e iluminação (esfera de vidro, camadas físicas).
 
-Nota: Se o link acima não funcionar, certifique-se de ter ativado o GitHub Pages nas configurações do repositório (Instruções abaixo).
+Precisão Astronômica: As 27 estrelas da bandeira estão mapeadas de acordo com a Lei Federal, incluindo o Cruzeiro do Sul e o Escorpião.
 
-🛠️ Tecnologias Usadas
+Responsivo e Adaptável:
 
-HTML5 / SVG: Para a estrutura e desenho vetorial das estrelas (mapa estelar oficial de 1889).
+Fundo Transparente: Pode ser sobreposto a qualquer site.
 
-CSS3 Avançado:
+Dark Mode Automático: O texto "CARREGANDO..." e o cursor mudam de cor (azul/branco) automaticamente baseados na preferência do sistema do usuário.
 
-@keyframes para animações complexas em loop.
+Efeito Typewriter: Texto de carregamento com animação de máquina de escrever centralizada.
 
-transform-style: preserve-3d e perspective para o efeito 3D.
+📂 Estrutura do Projeto
 
-box-shadow e linear-gradient para iluminação e volumetria realista.
+O código foi separado para facilitar a manutenção e integração:
 
-Design Responsivo: Centralizado e adaptável.
-
-Dark Mode Automático: O texto se ajusta se o sistema estiver no modo escuro.
-
-⚙️ Como usar no seu projeto
-
-Basta copiar o código do arquivo index.html (ou loading-brasil.html). Todo o CSS está contido na tag <style>, tornando-o "Plug and Play".
-
-<!-- Exemplo de estrutura -->
-<div class="loader-wrapper">
-   <!-- Cole o código da bandeira aqui -->
-</div>
+/
+├── index.html   # Estrutura (HTML + SVG das estrelas)
+├── style.css    # Estilização (Animações, Keyframes, 3D)
+└── README.md    # Documentação
 
 
-📦 Como ativar o GitHub Pages (Para ver online)
+🚀 Como Usar
 
-No topo do seu repositório no GitHub, clique em Settings (Configurações).
+1. Download / Clone
 
-No menu lateral esquerdo, clique em Pages.
+Baixe os arquivos index.html e style.css para o seu computador.
+
+2. Integração
+
+Se você quiser usar apenas o loader em seu projeto existente:
+
+Copie o arquivo style.css para sua pasta de estilos e linke-o no seu <head>.
+
+Copie o bloco HTML <div class="loader-wrapper">...</div> do index.html e cole onde deseja que o loader apareça.
+
+3. Visualização Online (GitHub Pages)
+
+Para ver a animação rodando diretamente do GitHub:
+
+Vá em Settings > Pages no seu repositório.
 
 Em Source, selecione Deploy from a branch.
 
-Em Branch, selecione main (ou master) e a pasta / (root).
+Escolha a branch main e salve.
 
-Clique em Save.
+O link será gerado automaticamente (ex: seu-usuario.github.io/seu-loader).
 
-Aguarde alguns segundos e atualize a página. O GitHub fornecerá o link do seu site!
+🎨 Personalização
+
+Você pode ajustar facilmente as cores ou tempos no arquivo style.css:
+
+Velocidade: Altere o tempo 5s nas propriedades animation para deixar mais rápido ou mais lento.
+
+Tamanho: Ajuste width e height da classe .flag-container (mantendo a proporção 7:10).
 
 Feito com 💚 e CSS.
